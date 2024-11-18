@@ -147,6 +147,37 @@ Though this version the application the only function that works is the "Report 
    - I really enjoyed part two of the POE as we were asked to use data structures that we have never been asked to use in a application before. I faced many challenges due to having to use data structures that I have never used in an application so having to teach myself these new data structures as well as implementing them into our application taught me how important it is to constantly be educating yourself on different data structures. A mistake that I made during part two of the POE is that I tried to add a functionality that allowed the user to be able to add their own events and announcements and by doing this it caused my application to have many issues and bugs. Another issue I had is that I over complicated the recommendation function and this also caused me to lose marks. I Believe for part two of the POE that you should used a Database as it would make the implementation of a recommendation system a lot easier as well as making the recommendation system actually a recommendation system. So in part 3 of the POE I completely removed the ability for users to be able to add their own events and announcements. A lesson I learned from part two of the POE is to mange my time better and to also not over complicate features that need to be added to applications.
  - Part three of the POE was my favourite part of this project as we had to implement complex data structures such as Binary search tree’s, Graphs, Heaps, and Minimum spanning tree’s. I really enjoyed having to learn about these complex data structures and how much faster they are compared to other data structures and how using these data structures will greatly increase the efficiency of applications. The obvious challenge I faced was that I did not have the experience with the implementation of these data structures, so I had to research how to implement these data structures and how each of these data structures functioned and how they would increase the efficiency of my application. By spending time researching these data structures it really helped me understand how to implement them into my application.
  - I have learned many new skills as well as having learnt a lot about myself from completing this POE. The major thing I struggled with in this application is the designing of the frontend as being creative is not my strongest skill but I did really enjoy implementing the backend for the application as that is where I am the strongest. In summary this POE has taught me a lot and also helped me improve as a software engineer and as a person.
+---
+## Technology Recommendations
+- One of the best tools I believe that should be implemented into this application is a Database. By adding a database you will have centralized place to store data and therefore it makes it easier to access and manage data that is connected to the municipality application. Also using a database will allow the application to have different roles such as customer, employee, manager, and Admin. By doing this you will be able to have the creation of user accounts and this will allow for the implementation of role access control as well as allow for customers to have their own personal account and will allow for all service requests and reports to be connected to their account and also allow for the addition of a payment portal.
+- A tool that can be implemented is Unit Testing as this will allow for the testing of each individual method that is in the View Models and by doing this it will ensure that each component is functionally correctly and this in turn will help reduce any errors that might occur when users a using the application.
+- A great addition to this application would be the integration of a payment gateway as this would allow customers to be able to pay for services provided and if the municipality wants to expand the application to more than just services they could also allow customers to pay fines. I believe the addition of this to the application will greatly increase customer experience as customers will not have to pay for the services in person but rather online if the service they have requested is personal and not related to any government issues an example of a government issue would be potholes. To implement this payment gateway I will have to use the PayPal REST API so that I am able to integrate various payment functionalities.
+- Another technology that could be implemented is SignalR . SignalR is a library for .NET that allows software developers to be able to add real-time functionality to their applications (Valdez, 2012). Real-time functionality means that server side code is able to be pushed to the connected clients as it happens in real time (Valdez, 2012). I believe this will greatly increase the quality of the application as users will be able have live tracking of the service requests, instant notification’s for local events and announcements that may be happening in the users area as well as notifications for any issues that may occur in the users area.
+- The last technology that I believe should be added to the application to improve the quality of it is a CI/CD pipeline. CI/CD pipelines are automated workflows that help build, test, and deliver software quickly and efficiently (Bigelow, 2024). There are many benefits to using a CI/CD Pipeline for this application they are as follows: time is saved and human errors are reduced due to the CI/CD pipeline automatically building and packaging the application when changes are made (Bigelow, 2024). Using a CI/CD pipeline will also ensure that each release of a new feature has gone through automated testing and lastly it allows for us developers to be able to revert to a previous version of the application if the newly released version of the application has major issues (Bigelow, 2024). This Technology will greatly improve the efficiency, quality and speed of the development and this ensures that the user receives the best possible application.
+
+## References 
+
+References
+Bigelow, S. J., 2024. CI/CD pipelines explained: Everything you need to know. [Online] 
+Available at: https://www.techtarget.com/searchsoftwarequality/CI-CD-pipelines-explained-Everything-you-need-to-know
+[Accessed 17 November 2024].
+GeekForGeeks, 2024. Binary Search Tree. [Online] 
+Available at: https://www.geeksforgeeks.org/binary-search-tree-data-structure/
+[Accessed 17 November 2024].
+GeekForGeeks, 2024. Heap Data Structure. [Online] 
+Available at: https://www.geeksforgeeks.org/heap-data-structure/
+[Accessed 17 November 2024].
+GeekForGeeks, 2024. What is Minimum Spanning Tree (MST). [Online] 
+Available at: https://www.geeksforgeeks.org/what-is-minimum-spanning-tree-mst/
+[Accessed 18 November 2024].
+Valdez, G. A., 2012. SignalR: Building real time web applications. [Online] 
+Available at: https://devblogs.microsoft.com/dotnet/signalr-building-real-time-web-applications/
+[Accessed 17 November 2024].
+W3Schools, 2024. DSA Graphs. [Online] 
+Available at: https://www.w3schools.com/dsa/dsa_theory_graphs.php
+[Accessed 17 November 2024].
+
+
 
    
 
