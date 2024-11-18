@@ -94,6 +94,10 @@ Though this version the application the only function that works is the "Report 
 - If the user wishes to go back to the main screen they are able to click on the Back To Menu button at the bottem of the window.
 - The status's go as follows, in progress means that the municipality is currently working on that service request, if the status is pending it means that the municipality has not attended to that service request, and lastly if the status is completed it means that the service request has been fulfilled.
 
+  ## Data structures used
+  ### Binary Search Tree
+  #### How it was used
+
 
 
 [Back To The Top](#read-me-template)
