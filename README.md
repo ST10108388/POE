@@ -5,8 +5,10 @@
 ### Table of Contents
 
 - [Description](#description)
-- [How To Use](#how-to-use-the-application)
-- [How To Use](#how-to-use)
+- [How To Use The Application](#how-to-use-the-application)
+- [Data structures used](#data-structures-used)
+- [Project Completion Report](#project-completion-report)
+- [Technology Recommendations](#technology-recommendations)
 - [License](#license)
 ---
 
@@ -26,7 +28,7 @@ Though this version the application the only function that works is the "Report 
 ---
 ## How to use the application
 
-## How To go to each window
+### How To go to each window
 - When the application starts up the user will be presented with four buttons that each contain writing.
 - The first button is the "Report issues" button, when clicked the user will be taken to the report Issues window.
 - The second button is the "Local Events and Announcements" Button when clicked the user will be displayed with an error that says that the Local events and announcemnets page is unavailable.
