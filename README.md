@@ -105,6 +105,15 @@ Though this version the application the only function that works is the "Report 
   - The binary search tree stores the ServiceRequestModel objects as nodes in the tree and the nodes are  arranged by the priority property. When a new service request is added it is then inserted into the Binary search tree with the following code “bst.Insert(request)” and this occurs in the method called AddServiceRequest in the ServiceRequestViewModel. To retrieve sorted service requests I used a method that was called “GetRequestsByPriority” and this method performed a in-order traversal with the following code “bst.InOrderTraversal()” In an in-order traversal of a binary search tree it returns the nodes in ascending order and therefore provided a list of ServiceRequestModel objects ordered by priority as the priority was made that so the higher the number the lower the priority of the service request is.
   - After the service request’s where retrieved in highest priority to lowest priority the list is then ordered by the number of dependencies  with the following code “OrderByDescending(r=> request.Graph.GetDependencies(r).Count()” and this prioritized requests with more dependencies. The final sorted list is returned to the SortedRequests property which is a generic list with the parameters of ServiceRequestModel and then this list is displayed in the table that displays all of the service requests in the service requests window of the application.
   - The binary search tree organizes all requests by priority and then a separate MinHeap is used to directly access the most urgent service request with the lowest priority value. The MostUrgentRequest property holds the top-priority service request.
+  - The ServiceRequestsModel also checks if the tree is empty before attempting to retrieve sorted requests.
+ #### How it made the application effecient
+ - The Binary search tree quickly sorts service requests by priority, the Binary search tree achieves this by having each service request automatically palced in order when being inserted into the Binary search tree. This therefore saving time on sorting. The time it takes to add service requests sort them and retrieve them are 0(log n).
+ - The binary search tree retrieves each service request in order of priority. This is achieved by using a in-order traversal which gets all requests in ascending priortiy and this helps to display tasks quickly.
+   the speed at which it does this is 0(n).
+ - The Binary search tree is able to handle large datasets well this ensures as the app can scale smoothly as more service requests are added.
+   
+  
+  
 
 
 
