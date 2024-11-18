@@ -2,7 +2,7 @@
 
 
 ---
-
+# DO NOT FORGET BIBLIOGRAPHY IN README
 ### Table of Contents
 
 - [Description](#description)
@@ -107,11 +107,29 @@ Though this version the application the only function that works is the "Report 
   - The binary search tree organizes all requests by priority and then a separate MinHeap is used to directly access the most urgent service request with the lowest priority value. The MostUrgentRequest property holds the top-priority service request.
   - The ServiceRequestsModel also checks if the tree is empty before attempting to retrieve sorted requests.
  #### How it made the application effecient
- - The Binary search tree quickly sorts service requests by priority, the Binary search tree achieves this by having each service request automatically palced in order when being inserted into the Binary search tree. This therefore saving time on sorting. The time it takes to add service requests sort them and retrieve them are 0(log n).
+ - The Binary search tree quickly sorts service requests by priority, the Binary search tree achieves this by having each service request automatically palced in order when being inserted into the Binary search tree. This therefore saving time on sorting. The time it takes to add service requests sort them and retrieve them are 0(log n)this speed was calculated by using ChatGPT.
  - The binary search tree retrieves each service request in order of priority. This is achieved by using a in-order traversal which gets all requests in ascending priortiy and this helps to display tasks quickly.
-   the speed at which it does this is 0(n).
+   the speed at which it does this is 0(n) this speed was calculated by using ChatGPT.
  - The Binary search tree is able to handle large datasets well this ensures as the app can scale smoothly as more service requests are added.
-   ---
+
+   ### Graph
+   #### What is a graph?
+   - A graph data structure is a non-linear data structure that consists of nodes and edges as stated by (W3Schools, 2024). A point in the graph is called a node and to connect two nodes with each other a edge is used (W3Schools, 2024). Graph data structures are used in computer science to represent relationships between objects (W3Schools, 2024).
+   #### How it was implemented
+   - In the service request section of the application a graph structure was used to represent the dependencies between service requests.
+   - Each ServiceRequestModel has dependencies represented by a list of other requests. Each of the dependencies are represented as directed edges in the graph this is achieved by the AddEdge method and this method establishes a relationship between two service requests. An example of how this is achieved is “requestGraph.addEdge(request 1, request ,1)” this code means that request1 depends on request2.
+   - Each service request is added as a node in the graph using the following code “requestGraph.AddNode(request)”. Dependencies between requests are represented as edges, where the weight in this case is represented by an integer of either 1 or 2, and this weight indicates the relative importance, duration, or difficulty of the dependency.
+   - The “GetDependencies” method is used to retrieve all service requests that a specific service request depends on. The “GetDependencies” method allows the “SelectedRequestDependencies” property to provide a list of dependencies for a selected request. This list of dependencies is displayed in the block with the heading of “ServicesDependentOnEachOther”. By displaying a service requests dependencies it helps understand what service requests must be completed before a specific service request can be completed.
+   - In the ”GetRequestsByPriority”  method the graph data structure is used here to determine depencency counts for each request.
+   #### How it made the application effecient
+   - The graph data structure captures dependencies between service requests and this therefore means that related service requests are processed in the correct order and therefore reducing delays.
+   - The graph allows for efficient prioritization due to nodes and edge representing service requests and dependencies. With the use of the graph the application is able to quickly find service requests with the highest urgency or service requests that depend on each other and this therefore optimizes scheduling of service requests.
+  
+     
+   
+
+   
+
 
 
    
