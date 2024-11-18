@@ -9,6 +9,7 @@
 - [Data structures used](#data-structures-used)
 - [Project Completion Report](#project-completion-report)
 - [Technology Recommendations](#technology-recommendations)
+- [References](#references)
 - [License](#license)
 ---
 
