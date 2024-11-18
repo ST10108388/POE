@@ -124,6 +124,16 @@ Though this version the application the only function that works is the "Report 
    #### How it made the application effecient
    - The graph data structure captures dependencies between service requests and this therefore means that related service requests are processed in the correct order and therefore reducing delays.
    - The graph allows for efficient prioritization due to nodes and edge representing service requests and dependencies. With the use of the graph the application is able to quickly find service requests with the highest urgency or service requests that depend on each other and this therefore optimizes scheduling of service requests.
+     ### Heap
+     #### What is a heap?
+     - A heap is a complete binary tree data structure. For every node in the heap data structure the value of its children is greater than or equal to its own value (GeekForGeeks, 2024). Priority queues are implemented by using Heaps (GeekForGeeks, 2024).
+     #### How it was implemented
+     - In the service requests section of the application the heap is used to manage service requests and extract the service request with the highest priority which is the service request with the minimum priority value.
+     -  Inside the “LoadServiceRequests” method each service request is added to the heap using the following code “heap.Insert(request)” . By doing this it ensures that the service requests are organized within the heap according to their priority.
+     -  The “MostUrgentRequest” property is set to the service priority with the highest priority this is achieved by calling the “heap.ExtractMin()” method this is the code “MostUrgentRequest = heap.ExtractMin()”. The “ExtractMin()” method removes and returns the service request with the hight priority.
+    #### How it made the application effecient
+   - A Heap is able to retrieve the highest-priority request quickly. The Heap is also able to Add or remove service requests quickly instead of sorting or scanning the entire list.
+  
   
      
    
