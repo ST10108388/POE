@@ -111,6 +111,9 @@ Though this version the application the only function that works is the "Report 
  - The binary search tree retrieves each service request in order of priority. This is achieved by using a in-order traversal which gets all requests in ascending priortiy and this helps to display tasks quickly.
    the speed at which it does this is 0(n).
  - The Binary search tree is able to handle large datasets well this ensures as the app can scale smoothly as more service requests are added.
+   ---
+
+
    
   
   
