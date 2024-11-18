@@ -161,7 +161,7 @@ Though this version the application the only function that works is the "Report 
 - Another technology that could be implemented is SignalR . SignalR is a library for .NET that allows software developers to be able to add real-time functionality to their applications (Valdez, 2012). Real-time functionality means that server side code is able to be pushed to the connected clients as it happens in real time (Valdez, 2012). I believe this will greatly increase the quality of the application as users will be able have live tracking of the service requests, instant notification’s for local events and announcements that may be happening in the users area as well as notifications for any issues that may occur in the users area.
 - The last technology that I believe should be added to the application to improve the quality of it is a CI/CD pipeline. CI/CD pipelines are automated workflows that help build, test, and deliver software quickly and efficiently (Bigelow, 2024). There are many benefits to using a CI/CD Pipeline for this application they are as follows: time is saved and human errors are reduced due to the CI/CD pipeline automatically building and packaging the application when changes are made (Bigelow, 2024). Using a CI/CD pipeline will also ensure that each release of a new feature has gone through automated testing and lastly it allows for us developers to be able to revert to a previous version of the application if the newly released version of the application has major issues (Bigelow, 2024). This Technology will greatly improve the efficiency, quality and speed of the development and this ensures that the user receives the best possible application.
 ---
-## How to clone the project from github
+## How to clone the project from github as taken from  (GitHub, 2024)
 Follow the steps below to clone this repository to your local machine:
 
 Prerequisites
@@ -249,12 +249,17 @@ Available at: https://www.geeksforgeeks.org/heap-data-structure/
 GeekForGeeks, 2024. What is Minimum Spanning Tree (MST). [Online] 
 Available at: https://www.geeksforgeeks.org/what-is-minimum-spanning-tree-mst/
 [Accessed 18 November 2024].
+GitHub, 2024. Cloning a repository. [Online] 
+Available at: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+[Accessed 17 November 2024].
 Valdez, G. A., 2012. SignalR: Building real time web applications. [Online] 
 Available at: https://devblogs.microsoft.com/dotnet/signalr-building-real-time-web-applications/
 [Accessed 17 November 2024].
 W3Schools, 2024. DSA Graphs. [Online] 
 Available at: https://www.w3schools.com/dsa/dsa_theory_graphs.php
 [Accessed 17 November 2024].
+
+
 
 
 
