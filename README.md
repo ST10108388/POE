@@ -123,7 +123,7 @@ Though this version the application the only function that works is the "Report 
      ### Heap
      #### What is a heap?
      - A heap is a complete binary tree data structure. For every node in the heap data structure the value of its children is greater than or equal to its own value (GeekForGeeks, 2024). Priority queues are implemented by using Heaps (GeekForGeeks, 2024).
-     - 
+       
      #### How it was implemented
      - In the service requests section of the application the heap is used to manage service requests and extract the service request with the highest priority which is the service request with the minimum priority value.
      -  Inside the “LoadServiceRequests” method each service request is added to the heap using the following code “heap.Insert(request)” . By doing this it ensures that the service requests are organized within the heap according to their priority.
@@ -135,11 +135,11 @@ Though this version the application the only function that works is the "Report 
       ### Minimum Spanning Tree
       #### What is a minumum spanning tree?
      - The definition of a spanning tree is a spanning tree that has the minimum weight among all the possible spanning trees (GeekForGeeks, 2024).
-     - 
+       
       #### How it was implemented
      - The Minimum spanning tree is being computed using Prims Algorithm. Prims Algorithm is used to find the subset of edges that connects all the nodes which are the service requests in the graph with the possible total edge weight, and without forming any cycles.
      - Prims algorithm picks the smallest edge which is the lowest weight  that connects a mew service request to the already visited ones. It performs this step by step to ensure no cycles are formed during the process. Once the edge is chosen its added to the Minimum spanning tree, and then the connected services are checked for more edges to explore.
-     - 
+       
       #### How it made the application more effecient
      - Using a minimum spanning tree ensures that service requests are connected with the least cost and this therefore avoids unnecessary connections. Prims algorithm handles large networks efficiently by focusing only on the essential connections. A minimum spanning tree saves resources and improves performance by preventing the recalculation of the same edges.
 ---  
