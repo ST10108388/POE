@@ -160,6 +160,79 @@ Though this version the application the only function that works is the "Report 
 - A great addition to this application would be the integration of a payment gateway as this would allow customers to be able to pay for services provided and if the municipality wants to expand the application to more than just services they could also allow customers to pay fines. I believe the addition of this to the application will greatly increase customer experience as customers will not have to pay for the services in person but rather online if the service they have requested is personal and not related to any government issues an example of a government issue would be potholes. To implement this payment gateway I will have to use the PayPal REST API so that I am able to integrate various payment functionalities.
 - Another technology that could be implemented is SignalR . SignalR is a library for .NET that allows software developers to be able to add real-time functionality to their applications (Valdez, 2012). Real-time functionality means that server side code is able to be pushed to the connected clients as it happens in real time (Valdez, 2012). I believe this will greatly increase the quality of the application as users will be able have live tracking of the service requests, instant notification’s for local events and announcements that may be happening in the users area as well as notifications for any issues that may occur in the users area.
 - The last technology that I believe should be added to the application to improve the quality of it is a CI/CD pipeline. CI/CD pipelines are automated workflows that help build, test, and deliver software quickly and efficiently (Bigelow, 2024). There are many benefits to using a CI/CD Pipeline for this application they are as follows: time is saved and human errors are reduced due to the CI/CD pipeline automatically building and packaging the application when changes are made (Bigelow, 2024). Using a CI/CD pipeline will also ensure that each release of a new feature has gone through automated testing and lastly it allows for us developers to be able to revert to a previous version of the application if the newly released version of the application has major issues (Bigelow, 2024). This Technology will greatly improve the efficiency, quality and speed of the development and this ensures that the user receives the best possible application.
+---
+## How to clone the project from github
+Follow the steps below to clone this repository to your local machine:
+
+Prerequisites
+Git must be installed on your machine. If you don't have Git installed, follow the instructions on the official Git website.
+You will need a GitHub account if you plan to contribute, though it is optional for cloning.
+Steps to Clone the Repository
+Find the Repository URL
+
+Visit the GitHub repository you want to clone.
+Click the green "Code" button at the top-right of the page.
+Under the Clone with HTTPS section, copy the URL that looks like this:
+arduino
+Copy code
+https://github.com/username/repository-name.git
+Alternatively, you can clone using SSH if you have SSH keys set up, with the URL:
+scss
+Copy code
+git@github.com:username/repository-name.git
+Open Your Terminal or Command Prompt
+
+On Windows, open Command Prompt or Git Bash (if installed).
+On Mac/Linux, open the Terminal.
+Navigate to the Desired Directory
+
+Use the cd command to navigate to the folder where you'd like to clone the repository. For example:
+
+bash
+Copy code
+cd path/to/your/directory
+Clone the Repository
+
+In the terminal, use the following command to clone the repository:
+
+bash
+Copy code
+git clone https://github.com/username/repository-name.git
+This will create a new directory with the same name as the repository in your current folder.
+
+Navigate Into the Cloned Repository
+
+Once the repository is cloned, change into the new directory:
+
+bash
+Copy code
+cd repository-name
+Verify the Clone
+
+To verify that the repository has been successfully cloned, run:
+
+bash
+Copy code
+git status
+This will show the current branch and any changes to the repository.
+
+Start Working on the Project
+
+Now, you're ready to begin working on the project. You can open the repository in your preferred code editor and start making changes.
+
+Additional Tips
+To clone a specific branch, use the following command:
+bash
+Copy code
+git clone -b branch-name https://github.com/username/repository-name.git
+To update your local repository with the latest changes from the original repository, run:
+bash
+Copy code
+git pull origin main
+(If the default branch is different, replace main with the correct branch name, like master).
+Troubleshooting
+If you face authentication issues while using HTTPS, Git will prompt you for your GitHub username and password. You can set up Git Credential Manager or switch to using SSH to avoid entering credentials repeatedly.
+If you receive errors related to the repository not being found, ensure the URL is correct and the repository exists.
 
 ## References 
 
