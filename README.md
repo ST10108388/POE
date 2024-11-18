@@ -5,6 +5,7 @@
 ### Table of Contents
 
 - [Description](#description)
+- [How To Use](#how-to-use-the-application)
 - [How To Use](#how-to-use)
 - [License](#license)
 ---
@@ -23,6 +24,7 @@ Though this version the application the only function that works is the "Report 
 [Back To The Top](#read-me-template)
 
 ---
+## How to use the application
 
 ## How To go to each window
 - When the application starts up the user will be presented with four buttons that each contain writing.
