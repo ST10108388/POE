@@ -2,7 +2,6 @@
 
 
 ---
-# DO NOT FORGET BIBLIOGRAPHY IN README
 ### Table of Contents
 
 - [Description](#description)
@@ -62,23 +61,16 @@ Though this version the application the only function that works is the "Report 
 - if the user has not entered in all of the details the user will then be displayed with an error saying that not all of he details have been filled in.
 - if the user wants to go back to the main menu they must lcick the Back to menu button.
 
-### How to Add a announcement or event
-- Click on the Local Events and Announcement button in the main menu
-- After clicking the Local Events and Announcement button you will be taken to the Display Local Events and Announcements Screen
-- from this screen click on the Add event or announcement button
-- After clicking this button you will be taken to the add announcemnt or event screen
-- from here you must enter in all the required details
-- If you miss any of the details you will be displayed with an error
-- if you wish to undo the event you just added you are able to click the delete event button and this will delete your event
-- once you have saved all of the event you wish to add you are able to click on the  Back to display events button and this will take you to the Display events and announcements screen
-
 ### How to display an event or announcement
-- First you must select the date
-- Then you are able to either enter the name of the event or announcement or select a category 
-- If you type in the name of the event or announcement you will be displayed with that specific event and all of the events with a similiar category will be displayed in the Recommenedd events box
-- if you select the category you will be displayed with all of the events and announcements that occured on that date
-- YOu are able to click the events in the Recommended events box and you will be displayed with all of the details about the event or announcement
-- to display the event or announcement YOU MUST SELECT A DATE IN THE DATE PICKER.
+- To display and event or announcement you must first click on the local announcements and events button
+- Once clicked you will be taken to the local events and announcements screen where you will be displayed all of the events and announcements in the table
+- To display a specific event you are able to choose between the name of the event or announcement or the category
+- if you type the name of the event or announcement you will be shown just that event or announcement in the table you will also be shown events or announcements that have the same category and date as the one you typed in.
+- If you choose to select by category you will be shown all the events and announcements that are in that category you will then also be shown the events and announcements that have the same category and date
+- Once you have chosen to either enter the name of the announcement or event or choose a category you must then click the search button.
+- These recommendations will be shown in the recommendations block.
+- You are able to click on one of the recommendations and a new window will open and you will be displayed with all the details of the event or announcement.
+- If you wish to go back to the main menu you are able to click the back to menu button and this will take you back to the main menu.
 
 ### How to display service requests
 - To display service requests the user must click on the service requests button on the main screen
