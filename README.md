@@ -133,6 +133,14 @@ Though this version the application the only function that works is the "Report 
      -  The “MostUrgentRequest” property is set to the service priority with the highest priority this is achieved by calling the “heap.ExtractMin()” method this is the code “MostUrgentRequest = heap.ExtractMin()”. The “ExtractMin()” method removes and returns the service request with the hight priority.
     #### How it made the application effecient
    - A Heap is able to retrieve the highest-priority request quickly. The Heap is also able to Add or remove service requests quickly instead of sorting or scanning the entire list.
+     ### Minimum Spanning Tree
+     #### What is a minumum spanning tree?
+     - The definition of a spanning tree is a spanning tree that has the minimum weight among all the possible spanning trees (GeekForGeeks, 2024).
+     #### How it was implemented
+     - The Minimum spanning tree is being computed using Prims Algorithm. Prims Algorithm is used to find the subset of edges that connects all the nodes which are the service requests in the graph with the possible total edge weight, and without forming any cycles.
+     - Prims algorithm picks the smallest edge which is the lowest weight  that connects a mew service request to the already visited ones. It performs this step by step to ensure no cycles are formed during the process. Once the edge is chosen its added to the Minimum spanning tree, and then the connected services are checked for more edges to explore.
+    #### How it made the application more effecient
+   - Using a minimum spanning tree ensures that service requests are connected with the least cost and this therefore avoids unnecessary connections. Prims algorithm handles large networks efficiently by focusing only on the essential connections. A minimum spanning tree saves resources and improves performance by preventing the recalculation of the same edges.
   
   
      
