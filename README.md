@@ -92,6 +92,9 @@ Though this version the application the only function that works is the "Report 
 - If a service request is clicked in the table they will be shown all the details of that request in the block that has the Heading of "Selected Service Request"
 - In the last block the user will be displayed with the most urgent service request. This service request has the highest priority as well as the most dependencies connected to it.
 - If the user wishes to go back to the main screen they are able to click on the Back To Menu button at the bottem of the window.
+- The status's go as follows, in progress means that the municipality is currently working on that service request, if the status is pending it means that the municipality has not attended to that service request, and lastly if the status is completed it means that the service request has been fulfilled.
+
+
 
 [Back To The Top](#read-me-template)
 
