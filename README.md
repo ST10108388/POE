@@ -99,7 +99,8 @@ Though this version the application the only function that works is the "Report 
   - After the service request’s where retrieved in highest priority to lowest priority the list is then ordered by the number of dependencies  with the following code “OrderByDescending(r=> request.Graph.GetDependencies(r).Count()” and this prioritized requests with more dependencies. The final sorted list is returned to the SortedRequests property which is a generic list with the parameters of ServiceRequestModel and then this list is displayed in the table that displays all of the service requests in the service requests window of the application.
   - The binary search tree organizes all requests by priority and then a separate MinHeap is used to directly access the most urgent service request with the lowest priority value. The MostUrgentRequest property holds the top-priority service request.
   - The ServiceRequestsModel also checks if the tree is empty before attempting to retrieve sorted requests.
- #### How it made the application effecient
+  - 
+  #### How it made the application effecient
  - The Binary search tree quickly sorts service requests by priority, the Binary search tree achieves this by having each service request automatically palced in order when being inserted into the Binary search tree. This therefore saving time on sorting. The time it takes to add service requests sort them and retrieve them are 0(log n)this speed was calculated by using ChatGPT.
  - The binary search tree retrieves each service request in order of priority. This is achieved by using a in-order traversal which gets all requests in ascending priortiy and this helps to display tasks quickly.
    the speed at which it does this is 0(n) this speed was calculated by using ChatGPT.
@@ -108,32 +109,39 @@ Though this version the application the only function that works is the "Report 
    ### Graph
    #### What is a graph?
    - A graph data structure is a non-linear data structure that consists of nodes and edges as stated by (W3Schools, 2024). A point in the graph is called a node and to connect two nodes with each other a edge is used (W3Schools, 2024). Graph data structures are used in computer science to represent relationships between objects (W3Schools, 2024).
+     
    #### How it was implemented
    - In the service request section of the application a graph structure was used to represent the dependencies between service requests.
    - Each ServiceRequestModel has dependencies represented by a list of other requests. Each of the dependencies are represented as directed edges in the graph this is achieved by the AddEdge method and this method establishes a relationship between two service requests. An example of how this is achieved is “requestGraph.addEdge(request 1, request ,1)” this code means that request1 depends on request2.
    - Each service request is added as a node in the graph using the following code “requestGraph.AddNode(request)”. Dependencies between requests are represented as edges, where the weight in this case is represented by an integer of either 1 or 2, and this weight indicates the relative importance, duration, or difficulty of the dependency.
    - The “GetDependencies” method is used to retrieve all service requests that a specific service request depends on. The “GetDependencies” method allows the “SelectedRequestDependencies” property to provide a list of dependencies for a selected request. This list of dependencies is displayed in the block with the heading of “ServicesDependentOnEachOther”. By displaying a service requests dependencies it helps understand what service requests must be completed before a specific service request can be completed.
    - In the ”GetRequestsByPriority”  method the graph data structure is used here to determine depencency counts for each request.
+     
     #### How it made the application effecient
    - The graph data structure captures dependencies between service requests and this therefore means that related service requests are processed in the correct order and therefore reducing delays.
    - The graph allows for efficient prioritization due to nodes and edge representing service requests and dependencies. With the use of the graph the application is able to quickly find service requests with the highest urgency or service requests that depend on each other and this therefore optimizes scheduling of service requests.
      ### Heap
      #### What is a heap?
      - A heap is a complete binary tree data structure. For every node in the heap data structure the value of its children is greater than or equal to its own value (GeekForGeeks, 2024). Priority queues are implemented by using Heaps (GeekForGeeks, 2024).
+     - 
      #### How it was implemented
      - In the service requests section of the application the heap is used to manage service requests and extract the service request with the highest priority which is the service request with the minimum priority value.
      -  Inside the “LoadServiceRequests” method each service request is added to the heap using the following code “heap.Insert(request)” . By doing this it ensures that the service requests are organized within the heap according to their priority.
      -  The “MostUrgentRequest” property is set to the service priority with the highest priority this is achieved by calling the “heap.ExtractMin()” method this is the code “MostUrgentRequest = heap.ExtractMin()”. The “ExtractMin()” method removes and returns the service request with the hight priority.
+     -  
       #### How it made the application effecient
    - A Heap is able to retrieve the highest-priority request quickly. The Heap is also able to Add or remove service requests quickly instead of sorting or scanning the entire list.
+   - 
       ### Minimum Spanning Tree
       #### What is a minumum spanning tree?
      - The definition of a spanning tree is a spanning tree that has the minimum weight among all the possible spanning trees (GeekForGeeks, 2024).
+     - 
       #### How it was implemented
      - The Minimum spanning tree is being computed using Prims Algorithm. Prims Algorithm is used to find the subset of edges that connects all the nodes which are the service requests in the graph with the possible total edge weight, and without forming any cycles.
      - Prims algorithm picks the smallest edge which is the lowest weight  that connects a mew service request to the already visited ones. It performs this step by step to ensure no cycles are formed during the process. Once the edge is chosen its added to the Minimum spanning tree, and then the connected services are checked for more edges to explore.
+     - 
       #### How it made the application more effecient
-   - Using a minimum spanning tree ensures that service requests are connected with the least cost and this therefore avoids unnecessary connections. Prims algorithm handles large networks efficiently by focusing only on the essential connections. A minimum spanning tree saves resources and improves performance by preventing the recalculation of the same edges.
+     - Using a minimum spanning tree ensures that service requests are connected with the least cost and this therefore avoids unnecessary connections. Prims algorithm handles large networks efficiently by focusing only on the essential connections. A minimum spanning tree saves resources and improves performance by preventing the recalculation of the same edges.
 ---  
    ## Project Completion Report
    - In the beginning of the semester I was extremely excited to start this project as I really wanted to implement the complex data structures we learned throughout the semester into a functional application. I learned a lot about user engagement during part 1 of the POE as before we started this POE I was not educated on the crucial ways to increase user engagement in an application and by researching five different user engagement strategies it really opened my mind to user engagement within an desktop application. I faced no challenges during part one of the POE regarding the data structures and the type of application we had to make as I already had experience with the data structures we were asked to use and also had experience with Model View View Model architecture pattern that I had to use for my Windows presentation form application. The section I struggled a slight bit in part one of the POE was making the application responsive as I only have experience with making Web applications responsive with boot strap, So having to teach myself how to make my WPF application responsive did take some time but by struggling with this and not asking for any help from any lecturers really helped me improve my problem solving skills as well as my researching skills. A section of part one of the POE where I really struggled was the uploading of different types of document and displaying them in my application. After hours of struggling I was able to get this function of the application working  and by struggling with this issue for hours it taught me how to work with different document types.
