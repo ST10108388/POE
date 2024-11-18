@@ -85,13 +85,14 @@ Though this version the application the only function that works is the "Report 
 - In the last block the user will be displayed with the most urgent service request. This service request has the highest priority as well as the most dependencies connected to it.
 - If the user wishes to go back to the main screen they are able to click on the Back To Menu button at the bottem of the window.
 - The status's go as follows, in progress means that the municipality is currently working on that service request, if the status is pending it means that the municipality has not attended to that service request, and lastly if the status is completed it means that the service request has been fulfilled.
-
+- 
   ## Data structures used
   ### Binary Search Tree
   #### What is a Binary Search Tree?
   - A binary search tree is a data structure that is used for organizing and storing data in a sorted manner. In a binary search tree each node in the tree has a two children, one of the children is a left child and the 
    other child is right child as stated by  (GeekForGeeks, 2024). The left child contains values less than the parent node while the right child contains values that are greater than the parent node (GeekForGeeks, 2024). 
   The benefits of using this type of hierarchical structure are efficient searching, insertion, and lastly deletion operations on the data stored in the tree (GeekForGeeks, 2024).
+
    #### How it was implemented
   - The binary search tree in the Service Request section of this application was used to organize and retrieve ServiceRequestModel instances based on the priority of the service request.
   - The binary search tree stores the ServiceRequestModel objects as nodes in the tree and the nodes are  arranged by the priority property. When a new service request is added it is then inserted into the Binary search tree with the following code “bst.Insert(request)” and this occurs in the method called AddServiceRequest in the ServiceRequestViewModel. To retrieve sorted service requests I used a method that was called “GetRequestsByPriority” and this method performed a in-order traversal with the following code “bst.InOrderTraversal()” In an in-order traversal of a binary search tree it returns the nodes in ascending order and therefore provided a list of ServiceRequestModel objects ordered by priority as the priority was made that so the higher the number the lower the priority of the service request is.
