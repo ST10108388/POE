@@ -113,7 +113,7 @@ Though this version the application the only function that works is the "Report 
    - Each service request is added as a node in the graph using the following code “requestGraph.AddNode(request)”. Dependencies between requests are represented as edges, where the weight in this case is represented by an integer of either 1 or 2, and this weight indicates the relative importance, duration, or difficulty of the dependency.
    - The “GetDependencies” method is used to retrieve all service requests that a specific service request depends on. The “GetDependencies” method allows the “SelectedRequestDependencies” property to provide a list of dependencies for a selected request. This list of dependencies is displayed in the block with the heading of “ServicesDependentOnEachOther”. By displaying a service requests dependencies it helps understand what service requests must be completed before a specific service request can be completed.
    - In the ”GetRequestsByPriority”  method the graph data structure is used here to determine depencency counts for each request.
-   #### How it made the application effecient
+    #### How it made the application effecient
    - The graph data structure captures dependencies between service requests and this therefore means that related service requests are processed in the correct order and therefore reducing delays.
    - The graph allows for efficient prioritization due to nodes and edge representing service requests and dependencies. With the use of the graph the application is able to quickly find service requests with the highest urgency or service requests that depend on each other and this therefore optimizes scheduling of service requests.
      ### Heap
@@ -123,15 +123,15 @@ Though this version the application the only function that works is the "Report 
      - In the service requests section of the application the heap is used to manage service requests and extract the service request with the highest priority which is the service request with the minimum priority value.
      -  Inside the “LoadServiceRequests” method each service request is added to the heap using the following code “heap.Insert(request)” . By doing this it ensures that the service requests are organized within the heap according to their priority.
      -  The “MostUrgentRequest” property is set to the service priority with the highest priority this is achieved by calling the “heap.ExtractMin()” method this is the code “MostUrgentRequest = heap.ExtractMin()”. The “ExtractMin()” method removes and returns the service request with the hight priority.
-    #### How it made the application effecient
+      #### How it made the application effecient
    - A Heap is able to retrieve the highest-priority request quickly. The Heap is also able to Add or remove service requests quickly instead of sorting or scanning the entire list.
-     ### Minimum Spanning Tree
-     #### What is a minumum spanning tree?
+      ### Minimum Spanning Tree
+      #### What is a minumum spanning tree?
      - The definition of a spanning tree is a spanning tree that has the minimum weight among all the possible spanning trees (GeekForGeeks, 2024).
-     #### How it was implemented
+      #### How it was implemented
      - The Minimum spanning tree is being computed using Prims Algorithm. Prims Algorithm is used to find the subset of edges that connects all the nodes which are the service requests in the graph with the possible total edge weight, and without forming any cycles.
      - Prims algorithm picks the smallest edge which is the lowest weight  that connects a mew service request to the already visited ones. It performs this step by step to ensure no cycles are formed during the process. Once the edge is chosen its added to the Minimum spanning tree, and then the connected services are checked for more edges to explore.
-    #### How it made the application more effecient
+      #### How it made the application more effecient
    - Using a minimum spanning tree ensures that service requests are connected with the least cost and this therefore avoids unnecessary connections. Prims algorithm handles large networks efficiently by focusing only on the essential connections. A minimum spanning tree saves resources and improves performance by preventing the recalculation of the same edges.
 ---  
    ## Project Completion Report
