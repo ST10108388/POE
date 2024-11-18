@@ -141,7 +141,7 @@ Though this version the application the only function that works is the "Report 
      - Prims algorithm picks the smallest edge which is the lowest weight  that connects a mew service request to the already visited ones. It performs this step by step to ensure no cycles are formed during the process. Once the edge is chosen its added to the Minimum spanning tree, and then the connected services are checked for more edges to explore.
     #### How it made the application more effecient
    - Using a minimum spanning tree ensures that service requests are connected with the least cost and this therefore avoids unnecessary connections. Prims algorithm handles large networks efficiently by focusing only on the essential connections. A minimum spanning tree saves resources and improves performance by preventing the recalculation of the same edges.
-  
+---  
   
      
    
